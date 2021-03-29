@@ -1,0 +1,44 @@
+@import '../styles';
+.main-container {
+    background-color: $bgColor;
+    width: 100%;
+    height: 100vh;
+    .minibio {
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+        padding: 50px 0;
+        img {
+            width: 154px;
+            height: auto;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+        h1 {
+            text-align: center;
+            font-weight: 500;
+        }
+        .social-box {
+            .link-box {
+                background: #fff;
+                padding: 10px 30px;
+                box-shadow: 0px 0px 20px 3px #e7e7e7;
+                margin: 20px;
+                display: flex;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.btn-change {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.main-container.dark {
+    background-color: black;
+    color: white;
+}
