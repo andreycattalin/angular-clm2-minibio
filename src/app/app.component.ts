@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,20 +10,21 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'minibio';
   isNight = false;
+  btnNightMode = faMoon
 
   socialNetworks = [
     {
-      img: "😃",
+      img: faGithub,
       text: "Mi perfil de github",
       link: "https://github.com/andreycattalin/"
     },
     {
-      img: "😍",
+      img: faTwitter,
       text: "Mira mi twitter",
       link: "https://twitter.com/andreycattalin"
     },
     {
-      img: "😍",
+      img: faLinkedin,
       text: "Mira mi linkedin",
       link: "https://www.linkedin.com/in/andreymarin/"
     }
@@ -29,6 +32,12 @@ export class AppComponent {
 
   changeMode() {
     this.isNight = !this.isNight
+
+    if(this.isNight) {
+      this.btnNightMode = faSun
+    } else {
+      this.btnNightMode = faMoon
+    }
   }
 
 }
