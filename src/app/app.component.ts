@@ -27,11 +27,6 @@ export class AppComponent {
       img: faLinkedin,
       text: "Mira mi linkedin",
       link: "https://www.linkedin.com/in/andreymarin/"
-    },
-    {
-      img: faGithub,
-      text: "Mira de nuevo github",
-      link: "https://github.com/andreycattalin/"
     }
   ]
 
